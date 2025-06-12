@@ -8,102 +8,26 @@ import { ArrowRight, Zap, Shield, Settings, TrendingUp, Brain, Cpu, Gauge, Wifi 
 
 const Homepage = () => {
   const applications = [
-    {
-      title: 'Robotica',
-      icon: '🤖',
-      description: 'Feedback in tempo reale per controllo preciso',
-      link: '/applications/robotica',
-      color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      title: 'Medicale',
-      icon: '🏥',
-      description: 'Sensori medical-grade ad alta precisione',
-      link: '/applications/medicale',
-      color: 'from-green-500 to-emerald-500'
-    },
-    {
-      title: 'Agricoltura',
-      icon: '🌾',
-      description: 'Soluzioni rugged per ambienti critici',
-      link: '/applications/agricoltura',
-      color: 'from-amber-500 to-orange-500'
-    },
-    {
-      title: 'Imballaggio',
-      icon: '📦',
-      description: 'Controllo qualità ad alta velocità',
-      link: '/applications/imballaggio',
-      color: 'from-purple-500 to-violet-500'
-    },
-    {
-      title: 'Industriale',
-      icon: '🏭',
-      description: 'Automazione e controllo intelligente',
-      link: '/applications/industriale',
-      color: 'from-gray-600 to-gray-700'
-    },
-    {
-      title: 'Custom',
-      icon: '⚗️',
-      description: 'Soluzioni personalizzate per mercati emergenti',
-      link: '/applications/custom',
-      color: 'from-pink-500 to-rose-500'
-    }
+    { title: 'Robotics', icon: '🤖', description: 'Real-time feedback for precise control', link: '/applications/robotics', color: 'from-blue-500 to-cyan-500' },
+    { title: 'Medical', icon: '🏥', description: 'High-precision medical-grade sensors', link: '/applications/medical', color: 'from-green-500 to-emerald-500' },
+    { title: 'Agriculture', icon: '🌾', description: 'Rugged solutions for critical environments', link: '/applications/agriculture', color: 'from-amber-500 to-orange-500' },
+    { title: 'Packaging', icon: '📦', description: 'High-speed quality control', link: '/applications/packaging', color: 'from-purple-500 to-violet-500' },
+    { title: 'Industrial', icon: '🏭', description: 'Smart automation and control', link: '/applications/industrial', color: 'from-gray-600 to-gray-700' },
+    { title: 'Custom & Emerging', icon: '⚗️', description: 'Tailored solutions for emerging markets', link: '/applications/custom-emerging', color: 'from-pink-500 to-rose-500' }
   ];
 
   const features = [
-    {
-      icon: <Brain className="w-8 h-8" />,
-      title: 'Embedded AI',
-      description: 'Algoritmi AI integrati per elaborazione in tempo reale',
-      color: 'from-blue-500 to-indigo-600'
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: 'Rugged Design',
-      description: 'Certificazione IP67 per ambienti critici',
-      color: 'from-green-500 to-teal-600'
-    },
-    {
-      icon: <Wifi className="w-8 h-8" />,
-      title: 'Industrial Interfaces',
-      description: 'Compatibilità nativa con CAN, SPI, Ethernet',
-      color: 'from-purple-500 to-violet-600'
-    },
-    {
-      icon: <Gauge className="w-8 h-8" />,
-      title: 'Real-Time Control',
-      description: 'Controllo preciso con latenza minimale',
-      color: 'from-orange-500 to-red-600'
-    }
+    { icon: <Brain className="w-8 h-8" />, title: 'Embedded AI', description: 'On-device AI algorithms for real-time processing', color: 'from-blue-500 to-indigo-600' },
+    { icon: <Shield className="w-8 h-8" />, title: 'Rugged Design', description: 'IP67 certified for harsh environments', color: 'from-green-500 to-teal-600' },
+    { icon: <Wifi className="w-8 h-8" />, title: 'Industrial Interfaces', description: 'Native support for CAN, SPI, Ethernet', color: 'from-purple-500 to-violet-600' },
+    { icon: <Gauge className="w-8 h-8" />, title: 'Real-Time Control', description: 'Precise control with minimal latency', color: 'from-orange-500 to-red-600' }
   ];
 
   const processSteps = [
-    {
-      number: '01',
-      title: 'Idea & Concept',
-      description: 'Analisi requirements e feasibility study',
-      color: 'blue'
-    },
-    {
-      number: '02',
-      title: 'Prototipo',
-      description: 'Sviluppo e test funzionali rapidi',
-      color: 'purple'
-    },
-    {
-      number: '03',
-      title: 'Test & Validazione',
-      description: 'Validazione in condizioni reali',
-      color: 'indigo'
-    },
-    {
-      number: '04',
-      title: 'Serie OEM',
-      description: 'Produzione scalabile con Zemick™',
-      color: 'green'
-    }
+    { number: '01', title: 'Idea & Concept', description: 'Requirement analysis and feasibility study', color: 'blue' },
+    { number: '02', title: 'Prototype', description: 'Rapid functional development and testing', color: 'purple' },
+    { number: '03', title: 'Test & Validation', description: 'In-field validation under real conditions', color: 'indigo' },
+    { number: '04', title: 'OEM Series', description: 'Scalable production with Zemick™', color: 'green' }
   ];
 
   return (
@@ -125,19 +49,18 @@ const Homepage = () => {
               <span className="text-white">sensor systems</span>
             </h1>
             <p className="text-xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Per ingegneri e OEM che necessitano di misurazioni più intelligenti, rapide e precise. 
-              Le nostre unità robuste integrano compensazione multi-sensore e AI perimetrale.
+              For engineers and OEMs who require smarter, faster, and more precise measurements. Our rugged units combine multi-sensor compensation and edge AI.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300">
                 <Link to="/applications">
-                  Trova la tua Applicazione
+                  Find Your Application
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-blue-300/30 text-blue-100 hover:bg-blue-100/10 backdrop-blur-sm">
+              <Button asChild variant="outline" size="lg" className="border-blue-300/30 text-blue-80 hover:bg-blue-100/10 backdrop-blur-sm">
                 <Link to="/technology">
-                  Scopri la nostra Tecnologia
+                  Explore Our Technology
                 </Link>
               </Button>
             </div>
@@ -151,10 +74,10 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Settori Serviti
+              Served Industries
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Soluzioni sensoriali intelligenti per i mercati più esigenti
+              Intelligent sensing solutions for the most demanding markets
             </p>
           </div>
           
@@ -194,9 +117,7 @@ const Homepage = () => {
               Sensor Expertise
             </h2>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-              Dynaxa sviluppa sistemi sensoriali embedded dotati di AI, con architetture flessibili, 
-              rugged design e protocolli industriali. Le nostre tecnologie supportano sensing multi-modale 
-              e elaborazione in tempo reale per ambienti critici.
+              Dynaxa develops embedded sensor systems equipped with AI, featuring flexible architectures, rugged design, and industrial protocols. Our technologies support multi-modal sensing and real-time processing for critical environments.
             </p>
           </div>
           
@@ -227,8 +148,7 @@ const Homepage = () => {
                 Fast Prototyping & Scaling
               </h2>
               <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-                Dalla prototipazione rapida alla produzione di serie, supportiamo i nostri partner 
-                in ogni fase del processo di sviluppo.
+                From rapid prototyping to mass production, we support our partners at every stage of the development process.
               </p>
               
               <div className="space-y-8">
@@ -251,7 +171,7 @@ const Homepage = () => {
                 <div className="absolute -top-4 -left-4 w-8 h-8 bg-blue-500 rounded-full opacity-20"></div>
                 <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-purple-500 rounded-full opacity-20"></div>
                 <blockquote className="text-2xl text-gray-800 mb-8 font-medium leading-relaxed">
-                  "Abbiamo ridotto il time-to-market del 60% grazie all'approccio end-to-end di Dynaxa."
+                  "We reduced time-to-market by 60% thanks to Dynaxa’s end-to-end approach."
                 </blockquote>
                 <div className="flex items-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mr-6 flex items-center justify-center">
@@ -273,14 +193,14 @@ const Homepage = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIgZmlsbC1ydWxlPSJub256ZXJvIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-            Non sei sicuro di dove iniziare?
+            Not sure where to start?
           </h2>
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Parla con i nostri ingegneri per trovare la soluzione perfetta per le tue esigenze
+            Talk to our engineers to find the perfect solution for your needs.
           </p>
           <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all duration-300 text-lg px-8 py-6">
             <Link to="/contact">
-              Parla con un Ingegnere Dynaxa
+              Talk to a Dynaxa Engineer
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
