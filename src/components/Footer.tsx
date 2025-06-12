@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, Linkedin, Youtube } from 'lucide-react';
@@ -19,7 +18,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Costruiamo sistemi sensoriali avanzati con AI per ingegneri e OEM che necessitano di misurazioni più intelligenti, rapide e precise.
+              We build advanced AI-powered sensing systems for engineers and OEMs who need smarter, faster, and more precise measurements.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
@@ -42,32 +41,32 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Applications</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/applications/robotica" className="text-gray-300 hover:text-white transition-colors">
-                  Robotica
+                <Link to="/applications/robotics" className="text-gray-300 hover:text-white transition-colors">
+                  Robotics
                 </Link>
               </li>
               <li>
-                <Link to="/applications/medicale" className="text-gray-300 hover:text-white transition-colors">
-                  Medicale
+                <Link to="/applications/medical" className="text-gray-300 hover:text-white transition-colors">
+                  Medical
                 </Link>
               </li>
               <li>
-                <Link to="/applications/agricoltura" className="text-gray-300 hover:text-white transition-colors">
-                  Agricoltura
+                <Link to="/applications/agriculture" className="text-gray-300 hover:text-white transition-colors">
+                  Agriculture
                 </Link>
               </li>
               <li>
-                <Link to="/applications/imballaggio" className="text-gray-300 hover:text-white transition-colors">
-                  Imballaggio
+                <Link to="/applications/packaging" className="text-gray-300 hover:text-white transition-colors">
+                  Packaging
                 </Link>
               </li>
               <li>
-                <Link to="/applications/industriale" className="text-gray-300 hover:text-white transition-colors">
-                  Industriale
+                <Link to="/applications/industrial" className="text-gray-300 hover:text-white transition-colors">
+                  Industrial
                 </Link>
               </li>
               <li>
-                <Link to="/applications/custom" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/applications/custom-emerging" className="text-gray-300 hover:text-white transition-colors">
                   Custom & Emerging
                 </Link>
               </li>
@@ -79,13 +78,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Technology</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/technology/ai-distillato" className="text-gray-300 hover:text-white transition-colors">
-                  AI Distillato
+                <Link to="/technology/ai-distilled" className="text-gray-300 hover:text-white transition-colors">
+                  Distilled AI
                 </Link>
               </li>
               <li>
-                <Link to="/technology/anti-deriva" className="text-gray-300 hover:text-white transition-colors">
-                  Anti-Deriva
+                <Link to="/technology/drift-compensation" className="text-gray-300 hover:text-white transition-colors">
+                  Drift Compensation
                 </Link>
               </li>
               <li>
@@ -99,8 +98,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/technology/torsiometro-wireless" className="text-gray-300 hover:text-white transition-colors">
-                  Torsiometro Wireless
+                <Link to="/technology/wireless-torque-sensor" className="text-gray-300 hover:text-white transition-colors">
+                  Wireless Torque Sensor
                 </Link>
               </li>
             </ul>
